@@ -148,6 +148,10 @@ ____
 						- Organisation Unique identifier (OUI)
 						- Unique portion
 					- CMD: ipconfig /all - will show mac
+	
+
+
+===2018-12-31 iki 04-19
 	______________________
 	LAYER 1 - Physical
 
