@@ -148,18 +148,90 @@ ____
 						- Organisation Unique identifier (OUI)
 						- Unique portion
 					- CMD: ipconfig /all - will show mac
-	
-
-
-===2018-12-31 iki 04-19
+___
+020 OSI Model - Layer 1_ Physical Layer
 	______________________
-	LAYER 1 - Physical
+	LAYER 1 - Physical: Binary transmision:
+		- What state represents a 0 or a 1
+		- defines the electrical. mechcanical. procedural and functional specifications for activating and deactivatinf the physical link
+___
+021 OSI Model - Host Communication
+	Encapsulation
+	FCS (frame check sequence) added between all layers enshures what data not curupted from sender to receiver
+	IN each layer prepins a new header (so data encapsulated between layers)
+	Wireshark
+___
+022 OSI Model - Encapsulation
+	Encapsulation - Sender
+	De-Encapsulation - receiver
+	Each layer only comunicates with ecvivalent layer between devices (Layer1 with layer1, l2-L2, etc)
+	Peer to peer comunication, transmits:
+		LAYER 4 - Transport  --> segments
+		LAYER 3 - Network  --> packets
+		LAYER 2 - Data Link  -->Frames
+		LAYER 1 - Physical --> Bits
+___
+023 OSI Model - TCP_IP versus OSI model
+OSI model,
+TCP/IP,
+	Aplication
+	Transport
+	Internet
+	Network Accces
+Hybrid,
+	Aplication
+	Transport
+	Network
+	Data Link
+	Physical
+___
+024 OSI Model - Demonstration using Wireshark
+
+DEMONSTRATION wireshark
 
 
+=============
+05 Binary
+___
+025 Binary Introduction
+	Binary 0 or 1
+	Binary, important due to:
+		- Subnetting
+		- AccessList
+___
+026 Binary versus Decimal
+	2(nuliniu) 1
+	2(pirmuoju) 2
+	2(antruoju) 2*2= 4
+	2(tre2iuoju) 2*2*2=8
+	ir t.t.
 
+Famous table; http://prntscr.com/m22w4r
+	BASE  	
+	BINARY
+	DECIMAL
+___
+027 Examples
+http://prntscr.com/m22skd
+http://prntscr.com/m22smy
+http://prntscr.com/m22spp
 
+___
+028 Covert IP Addresses to Binary
+	IPv4 Address:
+		- used to uniqueky identify a device on an IP network
+		- 4 octets in lenght
+			- 8 bits in lenght in the range of 0 to 255
+		Example:
+		10.129.16.123
+		http://prntscr.com/m22vb3
+___
+029 Convert Binary to Decimal
 
+===
+06 Hexadecimal
 
 	
 
 
+===2019-01-02 iki 06
