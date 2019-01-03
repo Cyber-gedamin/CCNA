@@ -230,8 +230,44 @@ ___
 
 ===
 06 Hexadecimal
+___
+030 Hexadecimal - Demo of MAC addresses and ARP cache
+	CMD: IP config / all | more
+	CMD: arp -a
+___
+031 Hexadecimal conversion theory and demos
+	BINARY: 0 or 1
+	DEMICAL 0 to 9
+	HEXADECIMAL: 0-F
+		0,1,2,3,4,5,6,7,8,9, A, B, C ,D, E, F
+		0,1,2,3,4,5,6,7,8,9, 10,11,12,13,14,15
+		eXAMPLE: http://prntscr.com/m2ggfu
+___
+032 Hexadecimal conversion theory and demos (continued)
+___
+033 Hexadecimal conversion theory and demos (continued)
 
-	
+====
+07 IP Addressing
+___
+034 IP Addressing Overview and Demonstration
+	ip4
+	ADDRESS CLASSES:
+		Class A
+		Class B
+		Class C
+		Class D
+		Class E 
+		CIDR
+	SPECIAL: ADDRESS:
+		-loopback
+		-local broadcast address
+	NETWORK MASKS
+	IP address: LAYER 3 logical address assigned by an administrator
+	-Used to identify specific devices on a network
+
+ 
 
 
-===2019-01-02 iki 06
+
+===2019-01-03 iki [34]
