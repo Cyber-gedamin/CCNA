@@ -56,17 +56,17 @@ ____
 	SCALABILITY - INDICATES HOW easy the network can grow
 	RELIABILITY - depentability of the components. MTBF - mean time befor failure.
 ____
-013 Physical versus logical topology and Network Diagrams
+#013 Physical versus logical topology and Network Diagrams
 ____	
-014 Application types and network performance
+#014 Application types and network performance
 	FTP, TFTP ....
 
 
 =============
-04 OSI Model
+#04 OSI Model
 ____
-015 OSI Model  -  Introduction and Layers
-016 OSI Model - Split of concentration
+#015 OSI Model  -  Introduction and Layers
+#016 OSI Model - Split of concentration
 	OPEN SYSTEM INTERCONECTION MODEL
 	Developer:
 		LAYER 7 - Aplication
@@ -78,7 +78,7 @@ ____
 		LAYER 2 - Datalink
 		LAYER 1 - Physical
 ____
-017 OSI Model - Application Layer_ Presentation Layer and Session Layer
+#017 OSI Model - Application Layer_ Presentation Layer and Session Layer
 	____________________
 	LAYER 7 - Aplication - Network proces to application:
 		- provide access for users
@@ -87,7 +87,7 @@ ____
 		- provide user authentification
 	______________________
 	LAYER 6 - Presentation - Data Representation / syntax:
-		- ensure hat data is readable by receiving system (ex.: .jpg open with notepad - will not be recognized )
+		- ensure what data is readable by receiving system (ex.: .jpg open with notepad - will not be recognized )
 		- formats data to be presented to application layer
 		- structures the data
 		- negotiates data transfer syntax for application layer
@@ -96,8 +96,8 @@ ____
 	______________________
 	LAYER 5 - Session - Interhost communication
 	- establish maintenance and termination of sessions between aplications
-	two applications processes on different machines establish a session
-	- In order to establsh: security, name recognision, logging, etc.
+	two applications processes on different mashines establish a session
+	- IOT establsh: security, name recognision, logging, etc.
 	Example: NetBIOS (Network Basic Input/Outpus system), PPT (Point-to-Point tunneling protocol)
 ____
 018 OSI Model - Top layers versus lower layers and Transport Layer
@@ -127,7 +127,7 @@ ____
 ____
 019 OSI Model  Network Layer & Data Link Layer
 	______________________
-	LAYER 3 - Network: allabout DATA DELIVERY
+	LAYER 3 - Network: all about DATA DELIVERY
 		- routes data packages from one device to another
 	Cisco vendors has LAYER 3 SWITCHES:
 		- have router capabilities
@@ -153,7 +153,7 @@ ___
 	______________________
 	LAYER 1 - Physical: Binary transmision:
 		- What state represents a 0 or a 1
-		- defines the electrical. mechcanical. procedural and functional specifications for activating and deactivatinf the physical link
+		- defines the electrical, mechcanical, procedural and functional specifications for activating and deactivating the physical link
 ___
 021 OSI Model - Host Communication
 	Encapsulation
@@ -203,7 +203,7 @@ ___
 	2(nuliniu) 1
 	2(pirmuoju) 2
 	2(antruoju) 2*2= 4
-	2(tre2iuoju) 2*2*2=8
+	2(treciuoju) 2*2*2=8
 	ir t.t.
 
 Famous table; http://prntscr.com/m22w4r
@@ -217,9 +217,9 @@ http://prntscr.com/m22smy
 http://prntscr.com/m22spp
 
 ___
-028 Covert IP Addresses to Binary
+028 Convert IP Addresses to Binary
 	IPv4 Address:
-		- used to uniqueky identify a device on an IP network
+		- used to uniquely identify a device on an IP network
 		- 4 octets in lenght
 			- 8 bits in lenght in the range of 0 to 255
 		Example:
@@ -265,9 +265,58 @@ ___
 	NETWORK MASKS
 	IP address: LAYER 3 logical address assigned by an administrator
 	-Used to identify specific devices on a network
+___
+035 IP Characteristics and IPv4 Address Format
+	CMD: ipconfig
+	IPv4:
+		- Layer 3
+		- Connectionless Protocol
+			-TCP is connection oriented
+		-  packets treated independently
+	 		- may take different paths
+	 	- no built in session
+	 	- no retransition
+	 IP address = 32 bit
+	 x.x.x.x. each x (in each octets) is 8 bits OR  1 byte
+	 8 binary bits/1byte
+	 - has a hierachical structure to enable routing
+___
+036 Network versus Host portion
+	NETWORK ADDRESS PORTION (Network ID)
+		- indentifies a specific network
+		- routers maintain routing tables that contain the network
+		- look at the destination of IP address and match network address
+	HOST ADDRESS PORTION (host ID):
+		- indentifies a specific endpoint on network
+		- servers, printers, PC, iphone, etc.
+
+	ARP - address resolution protocol
+___
+037 IPv4 Address format (Street Analogy) and Address Classes
+	ADDRESS CLASSES:
+		UNICAST Trafic:
+			Class A
+			Class B
+			Class C
+		A, B, C classes:
+			-supports 60 million IP addresses
+			-replaced by CIDR in 1993
+			-Accomodate different size of networks
+			-determined by the Interenet Assigned Numbers Authority (IANA)
+		MULTICAST:
+			Class D
+		Reserved for future or experimental purposes
+			Class E 
+	IPv6 - does not use address classes
+	IPv4 - address classes was replaced by CIDR
+___
+038 Class A and B addresses
+	Class A
+
+	
 
  
 
 
 
-===2019-01-03 iki [34]
+===2019-01-03 iki []
