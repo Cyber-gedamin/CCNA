@@ -311,12 +311,73 @@ ___
 	IPv4 - address classes was replaced by CIDR
 ___
 038 Class A and B addresses
-	Class A
+	Class A FROM: 0.0.0.0 TO 127.255.255.255
+			exceptions: 127 is reserved for loopback (not available on PC to configure 127.0.0.1. o network 0.1.1.1)
+		Actual range: 1.0.0.0 to 126.255.255.255
+
+		10.1.1.1
+		10 - First 8 bits is Networks
+		1.1.1 - remaining 24 bits is Hosts
+
+	Class B
+		Starts with binary 10 (one zero)
+		128.0.0.0 to 191.255.255.255
+		172.16.1.1
+			172 - identifies that it is Class B
+			172.16 - Network portion
+			1.1. Host portion
+
+___
+039 Class C_ D_ E_ A and B addresses
+	Class C - starts with binary 110 (one, one, zero)
+	192.0.0.0 to 233.255.255.255
+	Example:
+		192.168.1.1
+		192 - class C
+		192.168.1 - Network
+		1 - Host
+
+	Class D  RANGE: 224 to to 239
+		Class A, B, C = Unicast
+		Class D = Multicast, used internaly by your organisation
+		Example:
+		239.1.1.1 private multicast address
+
+		Class E - reserved addresses for broadcast
+			RANGE: 240.0.0.0 to 255.255.255.255
+
+===2019-01-03 iki [39]			
+
+
+
+
+
+
+
 
 	
 
  
 
 
+VISO 543
 
-===2019-01-03 iki []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
