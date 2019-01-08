@@ -295,18 +295,18 @@ ___
 037 IPv4 Address format (Street Analogy) and Address Classes
 	ADDRESS CLASSES:
 		UNICAST Trafic:
-			Class A
-			Class B
-			Class C
+			Class A up to 127
+			Class B from 128 to 191
+			Class C from 192 to 233
 		A, B, C classes:
 			-supports 60 million IP addresses
 			-replaced by CIDR in 1993
 			-Accomodate different size of networks
 			-determined by the Interenet Assigned Numbers Authority (IANA)
 		MULTICAST:
-			Class D
+			Class D from 234 to 239
 		Reserved for future or experimental purposes
-			Class E 
+			Class E from 240 to 255
 	IPv6 - does not use address classes
 	IPv4 - address classes was replaced by CIDR
 ___
@@ -345,8 +345,109 @@ ___
 
 		Class E - reserved addresses for broadcast
 			RANGE: 240.0.0.0 to 255.255.255.255
+___
+040 Special IPv4 Addresses and Directed Broadcast Address
+	CIDR - Classless Inter-Domain Routing
 
-===2019-01-03 iki [39]			
+	Directed Broadcast Address:
+		- host sends data to all devices on a specific netwok
+		- not permited on CISCO deviced IOT not have DoS atck (ex. with SMURF - DoS soft)
+	
+___
+041 Local Broadcast Address
+		LOCAL BROADCAST ADDRESS:
+		- communicate with all devices on local network
+		- address is all binarys
+		11111111.11111111.11111111.11111111 (binary)
+		255.255.255.255 (decimanl)
+
+		DHCP - Dynamic host configuration protocol. Provide IP adresses dynamicaly. No need to confugure manualy.
+___
+042 Local Loopback Address
+	- Used to let a system send message to itself for testing
+	- this is very useful to make sure that the TCP/IP stack is correctly instaled on a mashine
+	-Ex.: CMD: ping 127.127.127.127 (t.y. all range for 127 will be used for loopback)
+
+	Note: routers have loopback addresses which are not the same as local loopback address
+
+___
+043 RFC1918 - Private Addresses
+	RFC - request for comments
+		- internet standarts
+	RFC1918 - Private Addresses
+			- non routable on the Internet
+
+___
+044 RFC1918 - Class A_ B_ C and IPv4 Link Local Addresses
+	RFC1918:
+	- non routable on the Internet
+	- Three block o fIP addresses:
+		-1- 1 Class A Network
+		-2- 16 Class B Network
+		-3- 256 Class C Network
+	PRIVATE:
+		- 10.0.0.0 to 10.255.255.255
+		- 172.16.0.0 to 172.31.255.255
+		- 192.168.0.0 to 192.168.255.255
+
+	Example:
+		if  my addres 10.1.1.1 and I will pin google.com  my IP will be NAT'ed (Network address translated) to publicaly routed addesses
+		NAT - network addres trasnlate
+
+	RFC3927
+	- Automatic Private IP Address (APIPA)
+
+___
+045 Subnet Masks
+	- Used to determine network and host portion
+		- Used to determine which part on an IP address is the network portion and which part on an IP address is host portion
+	- it is finds out which device remote or local
+	DETERMINE:
+		REMOTE:
+		 - thus be reached via a default gateway-different subnets
+		LOCAL:
+		 - does not require a default gateway-same subnet
+
+	Class A, B, C networks have default masks also known as natural masks
+
+
+
+
+
+
+QUESTIONS:
+---------Network classes-------------
+			- porpose
+---------Subnet Masks-------------
+			- porpose
+
+
+
+	
+
+
+
+
+
+
+
+===2019-01-08 iki [46]			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
