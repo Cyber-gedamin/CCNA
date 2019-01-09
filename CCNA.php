@@ -409,17 +409,86 @@ ___
 		 - does not require a default gateway-same subnet
 
 	Class A, B, C networks have default masks also known as natural masks
+	________
+	Example:
+	10.1.1.1  = 00001010.00000001.00000001.00000001.00000001
+	255.0.0.0 = 11111111.00000000.00000000.00000000.00000000
+		- ONE (in binary) '1' INDICATES - NETWORK
+		- ZERO (in binary) '0' INDICATES - HOSTS
+	so 10.1.1.1 (will be on network 10.0.0.0)
+		10 will indicate network portion (NetID = 00001010 = 10)
+		1.1.1 will indicate host portion (HostID = 00000001.00000001.00000001.00000001 = 1.1.1 )
+
+
+HOST - any device in netwok with IP
+
+___
+046 Subnet mask demonstrations and Discontiguous Network Masks
+	CISCO do not support discontiguous masks
+		ex.: 	240.255.3.191
+				11110000.11111111.00000110.11000000 
+				t.y. negali buti vienetai po to nuliai ir po to vel vienetai. gali buti vienetai o po to nuliai
+		ONLY contiguous subnet mask are supported
+		ex.: 	11111111.11110000.00000000.00000000 = 255.24.0.0.0
+				11111111.11111111.11000000.00000000 = 255.255.192.0
+
+___
+047 CIDR Notation Part 1 and Part 2
+	Classless Inter-Domain Routing
+	CIDR - able to implement VARIABLE LENGHT SUBNET MASK
+		- Introduced in 1993
+		- replace clasful IP addresing
+		- variable length subnet mask (VLSM)
+			USE:          10.0.0.0/8 notation
+			Rather than:  10.0.0.0 255.0.0.0 notation
+
+	/X Mask
+		Dotted decimal:			Binary bits
+			255.255.255.0		/24
+
+			Conver mask to binary:
+			255 = 11111111 (8 binary 1's)
+			255 = 11111111 (8 binary 1's)
+			255 = 11111111 (8 binary 1's)
+			0   = 00000000 (0 binary 1's)
+
+			ex. 255.555.0.0 / 16
+				8  + 8 +0+0 = 16
+
+____
+048 CIDR Notation Part 3
+	CIDR Problems:
+		Class A
+			-16777214 hos addresses
+			-Mask of 255.0.0.0
+		Class B
+			- 65534 host addresses
+			- mask 255.255.0.0
+		Class C
+			254 host addresses
+			255.255.255.0
+
+			If Comapny want support 3000 hosts
+				Class B (but it is too much)
+				Class C (coud use multiple part C addresses but it will have begative effect on routing tables)
+		SOLUTION EX:
+		255.255.255.240
+		11111111.11111111.11111111.11110000
+		28 binary 1's or  /28
+		255.255.255.240 = /28
+
+
+=====reapeat=====
+sUBNET MASK MAIN PURPOSE AND HOW TO IDENTIFY NETWORK AND HOST PORTION
+WHAT IS CIDER AND ITS BENEFITS
 
 
 
 
+	
 
 
-QUESTIONS:
----------Network classes-------------
-			- porpose
----------Subnet Masks-------------
-			- porpose
+
 
 
 
