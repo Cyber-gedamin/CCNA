@@ -437,7 +437,7 @@ ___
 	Classless Inter-Domain Routing
 	CIDR - able to implement VARIABLE LENGHT SUBNET MASK
 		- Introduced in 1993
-		- replace clasful IP addresing
+		- replace classfull IP addresing
 		- variable length subnet mask (VLSM)
 			USE:          10.0.0.0/8 notation
 			Rather than:  10.0.0.0 255.0.0.0 notation
@@ -468,24 +468,77 @@ ____
 			254 host addresses
 			255.255.255.0
 
-			If Comapny want support 3000 hosts
+			If Comapny want to support 3000 hosts
 				Class B (but it is too much)
-				Class C (coud use multiple part C addresses but it will have begative effect on routing tables)
+				Class C (could use multiple part C addresses but it will have negative effect on routing tables)
 		SOLUTION EX:
 		255.255.255.240
 		11111111.11111111.11111111.11110000
 		28 binary 1's or  /28
 		255.255.255.240 = /28
 
+______
+##08 Cisco IOS Software and Initial Device Configuration
+___
+049 Overview and Uses of Cisco IOS Software.mp4
+	ex. CISCO IOS - nexus operating system (Nexys OS)
+	CISCO IOS - most common network operating system
+
+	Other OS - Catalyst OC (CatOC)
+	CISCO IOS use:
+		For routers
+		For switches
+		For Wireless Access Points
+
+___
+050 Physical connection to the Cisco router.mp4
+	Conneting to a router (HyperTerminal, Putty, etc.)
+	Real word: use CLI to configure
+	MODES" dont type the righ command in the wrong mode
+___
+051 How to connect to a router_switch.mp4
+	Connect router ro PC: 
+		Needs cable DB9 to RJ45 (plius adapteriai perejimui)
+	
+___
+052 Initial Startup.mp4
+	make sure used console input'a
+
+	Boots initial configuration catalog
+	COMANDS:
+		? - help inany place
+___
+053 Configuration of the router and Modes - User.mp4
+	Modes:
+		User Mode
+		Privilege Mode
+		Globas Configuration Mode
+
+	HyperTerminal:
+	? - will see commands available
+	show ? - additional options available
+	show ve - shows version
+	conf t (able to run in Privilage Mode)
+	enable - will switch to Privilege mode
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 =====reapeat=====
-sUBNET MASK MAIN PURPOSE AND HOW TO IDENTIFY NETWORK AND HOST PORTION
-WHAT IS CIDER AND ITS BENEFITS
+SUBNET MASK MAIN PURPOSE AND HOW TO IDENTIFY NETWORK AND HOST PORTION
+WHAT IS CIDER AND ITS N
 
 
-
-
-	
 
 
 
@@ -500,7 +553,7 @@ WHAT IS CIDER AND ITS BENEFITS
 
 
 
-===2019-01-08 iki [46]			
+===2019-01-09 iki [49]			
 
 
 
@@ -531,23 +584,5 @@ WHAT IS CIDER AND ITS BENEFITS
 
 
 VISO 543
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
