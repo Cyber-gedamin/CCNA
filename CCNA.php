@@ -45,7 +45,7 @@ ____
 		Characteristics of network:
 		TOPOLOGY:
 		 	(1) Physical  - interconected (cable, network devices, end points)
-		 	(2) Logical Network devices appear -> netwok users (path Data transferred in a networl
+		 	(2) Logical Network devices appear -> netwok users (path Data transferred in a network
 		example: VLANS (virtual local area network) - able multiple Virtual networks
 ____
 #012 Speed_ Cost_ Security_ Availability_ Scalability and Reliability
@@ -381,7 +381,7 @@ ___
 044 RFC1918 - Class A_ B_ C and IPv4 Link Local Addresses
 	RFC1918:
 	- non routable on the Internet
-	- Three block o fIP addresses:
+	- Three block of IP addresses:
 		-1- 1 Class A Network
 		-2- 16 Class B Network
 		-3- 256 Class C Network
@@ -479,47 +479,116 @@ ____
 
 ______
 ##08 Cisco IOS Software and Initial Device Configuration
-___
-049 Overview and Uses of Cisco IOS Software.mp4
-	ex. CISCO IOS - nexus operating system (Nexys OS)
-	CISCO IOS - most common network operating system
+		___
+		049 Overview and Uses of Cisco IOS Software.mp4
+			ex. CISCO IOS - nexus operating system (Nexys OS)
+			CISCO IOS - most common network operating system
 
-	Other OS - Catalyst OC (CatOC)
-	CISCO IOS use:
-		For routers
-		For switches
-		For Wireless Access Points
+			Other OS - Catalyst OC (CatOC)
+			CISCO IOS use:
+				For routers
+				For switches
+				For Wireless Access Points
 
-___
-050 Physical connection to the Cisco router.mp4
-	Conneting to a router (HyperTerminal, Putty, etc.)
-	Real word: use CLI to configure
-	MODES" dont type the righ command in the wrong mode
-___
-051 How to connect to a router_switch.mp4
-	Connect router ro PC: 
-		Needs cable DB9 to RJ45 (plius adapteriai perejimui)
-	
-___
-052 Initial Startup.mp4
-	make sure used console input'a
+		___
+		050 Physical connection to the Cisco router.mp4
+			Conneting to a router (HyperTerminal, Putty, etc.)
+			Real word: use CLI to configure
+			MODES" dont type the righ command in the wrong mode
+		___
+		051 How to connect to a router_switch.mp4
+			Connect router ro PC: 
+				Needs cable DB9 to RJ45 (plius adapteriai perejimui)
+			
+		___
+		052 Initial Startup.mp4
+			make sure used console input'a
 
-	Boots initial configuration catalog
-	COMANDS:
-		? - help inany place
-___
-053 Configuration of the router and Modes - User.mp4
-	Modes:
-		User Mode
-		Privilege Mode
-		Globas Configuration Mode
+			Boots initial configuration catalog
+			COMANDS:
+				? - help inany place
+		___
+		053 Configuration of the router and Modes - User.mp4
+			Modes:
+				User Mode - LIMITED COMMANDS (ex. can not reload switch or router)
+				Privilege Mode
+				Globas Configuration Mode
 
-	HyperTerminal:
-	? - will see commands available
-	show ? - additional options available
-	show ve - shows version
-	conf t (able to run in Privilage Mode)
-	enable - will switch to Privilege mode
+			HyperTerminal:
+			? - will see commands available
+			show ? - additional options available
+			show ve - shows version
+			conf t (able to run in Privilage Mode)
+			enable - will switch to Privilege mode
+
+		___
+		054 Modes - Enable_Privilege_ User EXEC_ Global Config.mp4
+			enable - will switch to Privilege mode
+			? - SHOW ALL AVAILABLE OPTION
+
+			Global Config
+			- with "#"
+			- change glogal configuration:
+				- hostname
+				- etc
+
+			Ex.: add text ehrn login to router, Hyper Terminal:
+			#banner motd #
+				This is such a ... network and you are not authorized to enter it without permision.
+		___
+		055 Modes - Interface.mp4
+			- hostname (config-if)#
+			- change interface configuration
+				- IP address
+				- enable/disable interface
+		___
+		056 Modes - Line and Router mode.mp4
+		 - Hyper Terminal: line con
+			Line mode used:
+				- console - line console mode
+				-vty - - for telnet or ssh switch
+			Hyper Terminal: LOGIN
+				- WILL REQUIRE TO ENTER  PASWORD BEFORE LOGIN
+
+			Router mode
+			Hyper Terminal: router rip
+
+		___
+		057 Help.mp4
+			? - always help and show options available
+			TAB - used for autocompletion
+			show history - showa my used commands
+		___
+		058 Commands.mp4
+		CTR+A - go to the beggining of line
+		CTR+E - go to the END of line
+		CTR+D - to delete
+		___
+		059 Commands (continuation) and Managing Cisco IOS Configuration.mp4
+		___
+		060 Copy Running Config Startup Config.mp4
+			CTR-u - erase line
+			CTR+c -cancel
+
+			show startup-configuration
+			run
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
