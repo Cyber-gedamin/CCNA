@@ -91,8 +91,8 @@ ____
 		- formats data to be presented to application layer
 		- structures the data
 		- negotiates data transfer syntax for application layer
-		-provide encryption
-		-Example: linux and win machine can read mp3. view videos, etc, because both machines understands format that both sides understand
+		- provide encryption
+		- Example: linux and win machine can read mp3. view videos, etc, because both machines understands format that both sides understand
 	______________________
 	LAYER 5 - Session - Interhost communication
 	- establish maintenance and termination of sessions between aplications
@@ -114,10 +114,10 @@ ____
 			- TCP3-way handshake
 				- if packet is missing it will be retransmitted
 				- acknowelegment of receipt of information
-			-Example: As telephone call if I call you and tell you a number You repeat that number back to me and aknowledgement/ensure that both of us got information corectly
+			-Example: As telephone call if I call you and tell you a number You repeat that number back to me and aknowledgement/ensure that both of us got information corectly.
 		_____
 		- UDP (User Datagram Protocol)
-			-does not provide reliability
+			- does not provide reliability
 			- if packet are droped they are lost
 			- doesnt retransmit lost packet (no reliacility)
 			- ligthweight
@@ -506,7 +506,7 @@ ______
 
 			Boots initial configuration catalog
 			COMANDS:
-				? - help inany place
+				? - help in any place
 		___
 		053 Configuration of the router and Modes - User.mp4
 			Modes:
@@ -565,15 +565,106 @@ ______
 		CTR+D - to delete
 		___
 		059 Commands (continuation) and Managing Cisco IOS Configuration.mp4
+		< .... ??? .... >
 		___
 		060 Copy Running Config Startup Config.mp4
-			CTR-u - erase line
-			CTR+c -cancel
+			< .... ??? .... >
+		___
+		061 Difference on the configuration.mp4
+		< .... ??? .... >
+		___
+		062 Erase startup config.mp4
+		< .... ??? .... >
+		___
+		063 TFTP Backup.mp4
+		< .... ??? .... >
+		___
+		064 Managing Cisco IOS Configuration.mp4
+		< .... ??? .... >
+		___
+		065 Storing files in Flash and Terminal Length.mp4
+		< .... ??? .... >
 
-			show startup-configuration
-			run
+_________________
+#09 IP Subnetting
+	___
+	066 IP Subnetting Part 1.mp4
+		METHOD 1 (Binary method)
+		METHOD 2 (quick method)
 
-		
+		Example:
+		PC1: 192.168.10.18/24 or 192.168.10.18 255.255.255.0
+		Answer:
+			- What IP address would router1 be configured with if it is to use the first IP address in some subnet as PC1?
+			- What broadcast address is use by PC1?
+			- What IP address would Router1 be configured with if it use the last IP address in the same subnet as PC?
+			- What subnet is PC1 part of?
+			______________
+			BINARY METHOD:
+				_______________________
+				Network/SubNet Address:
+					- Fill the host portion of on address with binary 0's
+				__________________
+				Broadcast address:
+					- Fill the host portion of an address with binarys 1's
+				___________
+				First host:
+					- Fill the host portion of an address with binary 0's EXCEPT the last bit which is set to binary 1
+				__________
+				Last host:
+					- Fill the host portion of an address with binary 1's except for the last bit which set to binary 0's
+			________
+			EXAMPLE:
+			192.168.1.18/24 OR 192.168.1.18 255.255.255.0
+				192.168.1 - Network portion
+				18 Host portion
+			SUBNET 		192.168.1.1.00000000	=	192.168.1.0
+			1st HOST 	192.168.1.1.00000001	=	192.168.1.1
+			LAST HOST 	192.168.1.1.11111110	=	192.168.1.254
+			BROADCAST 	192.168.1.1.11111111	=	192.168.1.255
+	____
+	067 IP Subnetting Part 2.mp4
+		Quick EXAMPLE:
+			USE Shortcut table ...???
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+****************************************************
+13d. 67video
+X   500video
+
+100 d. dienų t.y. 4 mėn.
+*****************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+	___
+	066 IP Subnetting Part 2.mp4
+	___
+	066 IP Subnetting Part 3.mp4
+	___
+	066 IP Subnetting Part 4.mp4
+
 
 
 
